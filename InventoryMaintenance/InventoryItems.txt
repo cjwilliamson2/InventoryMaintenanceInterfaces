@@ -3,3 +3,5 @@ Plant|3762592|Limonium|6.95|1 gallon
 Supply|9210584|Snail pellets|12.95|Ortho
 Plant|4738459|Japanese Red Maple|89.95|15 gallon
 Supply|9387260|Turf Builder Lawn Fertilizer|15.95|Scotts
+Plant|4554645|salad plant|5645|15 gallon
+Plant|454544|tooth|5|24-inch box

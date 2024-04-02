@@ -1,6 +1,6 @@
 ﻿namespace InventoryMaintenance
 {
-    public class InventoryItem
+    public class InventoryItem : IDisplayable
     {
         public InventoryItem() { }
 
@@ -14,6 +14,8 @@
         public int ItemNo { get; set; }
         public string Description { get; set; } = "";
         public decimal Price { get; set; }
+
+        //public virtual string GetDisplayText() => $"{ItemNo}    {Description} ({Price:c})";
 
         public virtual string GetDisplayText() => $"{ItemNo}    {Description} ({Price:c})";
     }

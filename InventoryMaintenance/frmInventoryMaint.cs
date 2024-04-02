@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace InventoryMaintenance
 {
     public partial class frmInventoryMaint : Form
@@ -18,7 +20,7 @@ namespace InventoryMaintenance
 
         private void FillItemListBox()
         {
-            InventoryItem item;
+            IDisplayable item;
             lstItems.Items.Clear();
             for (int i = 0; i < items.Count; i++)
             {
@@ -35,6 +37,10 @@ namespace InventoryMaintenance
             {
                 items += item;
             }
+
+            Debug.WriteLine($"Item type: {item.GetType()}");
+            Debug.WriteLine($"Item is InventoryItem: {item is InventoryItem}");
+            Debug.WriteLine($"Item is IDisplayable: {item is IDisplayable}");
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
